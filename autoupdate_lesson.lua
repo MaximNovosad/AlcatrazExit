@@ -16,10 +16,10 @@ update_state = false
 local script_vers = 1
 local script_vers_text = "1.00"
 
-local update_url = "https://raw.githubusercontent.com/MaximNovosad/AlcatrazExit/master/update.ini?token=AKIXAJLSFLQPWP5XZRDVDD3AJOVEY" -- тут тоже свою ссылку
+local update_url = "https://raw.githubusercontent.com/MaximNovosad/AlcatrazExit/master/update.ini" -- тут тоже свою ссылку
 local update_path = getWorkingDirectory() .. "/update.ini" -- и тут свою ссылку
 
-local script_url = "https://raw.githubusercontent.com/MaximNovosad/AlcatrazExit/master/autoupdate_lesson.lua?token=AKIXAJJQ64PAOE2JEPIOYHTAJOXOW" -- тут свою ссылку
+local script_url = "https://raw.githubusercontent.com/MaximNovosad/AlcatrazExit/master/autoupdate_lesson.lua?raw=true" -- тут свою ссылку
 local script_path = thisScript().path
 
 
@@ -60,5 +60,5 @@ function main()
 end
 
 function cmd_update(arg)
-    sampShowDialog(1000, "Автообновление v2.0", "{FFFFFF}Это урок по обновлению\n{FFF000}Новая версия", "Закрыть", "", 0)
+    sampShowDialog(1000, "Автообновление v1.0", "{FFFFFF}Это урок по обновлению\n{FFF000}Новая версия", "Закрыть", "", 0)
 end
